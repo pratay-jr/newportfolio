@@ -1,0 +1,24 @@
+html{
+    // This means that the browser will attempt to snap the scrolling to specific points along the vertical axis.
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans" , sans-serif;
+}
+body{
+    background-color: #0c0c1d ;
+    color: lightgrey;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    height: 100vh;
+    // when the user scrolls, the snap point for each section will be at the center of the viewport. This creates a smooth scrolling effect where each section aligns itself neatly in the middle of the viewport as the user scrolls
+    scroll-snap-align: center;
+}
